@@ -103,7 +103,8 @@ if __name__=='__main__':
                'teddy bear', 'hair drier', 'toothbrush']
     
     
-    capture=cv2.VideoCapture(0)
+    #capture=cv2.VideoCapture(0)
+    capture = cv2.VideoCapture("http://117.56.11.140:8601/Interface/Cameras/GetJPEGStream?Camera=C205&AuthUser=web&cache=8e711aca2c")
     capture.set(cv2.CAP_PROP_FRAME_WIDTH,1920)
     capture.set(cv2.CAP_PROP_FRAME_HEIGHT,1080)
     
